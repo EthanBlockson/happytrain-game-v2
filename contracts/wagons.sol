@@ -31,10 +31,7 @@ contract Wagons is ERC721URIStorage, Ownable {
     uint256 private _nextTokenId; // Global incrementer
     address internal deadAddress = 0x000000000000000000000000000000000000dEaD;
 
-    uint256 public testnetSumMinimizer = 100000; // TEMP, To use less ether while testing
-    uint32 public testnetTimeMinmizer = 10000; // TEMP, To wait less time while testing
-
-    constructor(string memory _baseTokenURI, address burner) ERC721("Unit", "UNIT") Ownable(msg.sender) {
+    constructor(string memory _baseTokenURI, address burner) ERC721("HappyTrain Wagons", "HTRW") Ownable(msg.sender) {
         baseTokenURI = _baseTokenURI;
         burnerContract = burner;
     }
@@ -49,27 +46,27 @@ contract Wagons is ERC721URIStorage, Ownable {
     mapping(uint8 => uint16) totalWagons;
 
     uint256[21] public levelPrice = [
-        0 ether / testnetSumMinimizer,       // Level 0, empty
-        0.005 ether / testnetSumMinimizer,   // Level 1, wood
-        0.007 ether / testnetSumMinimizer,   // Level 2, wood
-        0.01 ether / testnetSumMinimizer,    // Level 3, wood
-        0.016 ether / testnetSumMinimizer,   // Level 4, wood
-        0.016 ether / testnetSumMinimizer,   // Level 5, bricks
-        0.025 ether / testnetSumMinimizer,   // Level 6, bricks
-        0.04 ether / testnetSumMinimizer,    // Level 7, bricks
-        0.055 ether / testnetSumMinimizer,   // Level 8, bricks
-        0.055 ether / testnetSumMinimizer,   // Level 9, metal
-        0.08 ether / testnetSumMinimizer,    // Level 10, metal
-        0.12 ether / testnetSumMinimizer,    // Level 11, metal
-        0.18 ether / testnetSumMinimizer,    // Level 12, metal
-        0.18 ether / testnetSumMinimizer,    // Level 13, gold
-        0.27 ether / testnetSumMinimizer,    // Level 14, gold
-        0.41 ether / testnetSumMinimizer,    // Level 15, gold
-        0.62 ether / testnetSumMinimizer,    // Level 16, gold
-        0.62 ether / testnetSumMinimizer,    // Level 17, ruby
-        0.93 ether / testnetSumMinimizer,    // Level 18, ruby
-        1.4 ether / testnetSumMinimizer,     // Level 19, ruby
-        2.11 ether / testnetSumMinimizer     // Level 20, ruby
+        0 ether,       // Level 0, empty
+        0.005 ether,   // Level 1, wood
+        0.007 ether,   // Level 2, wood
+        0.01 ether,    // Level 3, wood
+        0.016 ether,   // Level 4, wood
+        0.016 ether,   // Level 5, bricks
+        0.025 ether,   // Level 6, bricks
+        0.04 ether,    // Level 7, bricks
+        0.055 ether,   // Level 8, bricks
+        0.055 ether,   // Level 9, metal
+        0.08 ether,    // Level 10, metal
+        0.12 ether,    // Level 11, metal
+        0.18 ether,    // Level 12, metal
+        0.18 ether,    // Level 13, gold
+        0.27 ether,    // Level 14, gold
+        0.41 ether,    // Level 15, gold
+        0.62 ether,    // Level 16, gold
+        0.62 ether,    // Level 17, ruby
+        0.93 ether,    // Level 18, ruby
+        1.4 ether,     // Level 19, ruby
+        2.11 ether     // Level 20, ruby
     ];
 
     uint16[21] public maxWagons = [
@@ -146,26 +143,26 @@ contract Wagons is ERC721URIStorage, Ownable {
 
     uint32[21] public workTime = [
         0,     // Level 0, empty
-        10800 / testnetTimeMinmizer, // Level 1, wood
-        9720 / testnetTimeMinmizer,  // Level 2, wood
-        8640 / testnetTimeMinmizer,  // Level 3, wood
-        7128 / testnetTimeMinmizer,  // Level 4, wood
-        21600 / testnetTimeMinmizer, // Level 5, bricks
-        19440 / testnetTimeMinmizer, // Level 6, bricks
-        17280 / testnetTimeMinmizer, // Level 7, bricks
-        14256 / testnetTimeMinmizer, // Level 8, bricks
-        43200 / testnetTimeMinmizer, // Level 9, metal
-        38880 / testnetTimeMinmizer, // Level 10, metal
-        34560 / testnetTimeMinmizer, // Level 11, metal
-        28512 / testnetTimeMinmizer, // Level 12, metal
-        86400 / testnetTimeMinmizer, // Level 13, gold
-        77760 / testnetTimeMinmizer, // Level 14, gold
-        69120 / testnetTimeMinmizer, // Level 15, gold
-        57024 / testnetTimeMinmizer, // Level 16, gold
-        172800 / testnetTimeMinmizer,// Level 17, ruby
-        155520 / testnetTimeMinmizer,// Level 18, ruby
-        138240 / testnetTimeMinmizer,// Level 19, ruby
-        114048 / testnetTimeMinmizer // Level 20, ruby
+        10800, // Level 1, wood
+        9720,  // Level 2, wood
+        8640,  // Level 3, wood
+        7128,  // Level 4, wood
+        21600, // Level 5, bricks
+        19440, // Level 6, bricks
+        17280, // Level 7, bricks
+        14256, // Level 8, bricks
+        43200, // Level 9, metal
+        38880, // Level 10, metal
+        34560, // Level 11, metal
+        28512, // Level 12, metal
+        86400, // Level 13, gold
+        77760, // Level 14, gold
+        69120, // Level 15, gold
+        57024, // Level 16, gold
+        172800,// Level 17, ruby
+        155520,// Level 18, ruby
+        138240,// Level 19, ruby
+        114048 // Level 20, ruby
     ];
 
     uint16[21] public repairCost = [

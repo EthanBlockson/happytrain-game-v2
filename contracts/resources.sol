@@ -5,7 +5,6 @@ import {ERC1155} from "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
-// Total supply tracking?
 
 contract Resources is ERC1155, Ownable {
     using Strings for uint256;
@@ -16,9 +15,13 @@ contract Resources is ERC1155, Ownable {
     uint256 public constant metal = 2;
     uint256 public constant gold = 3;
     uint256 public constant ruby = 4;
+    string public name;
+    string public symbol;
 
-    constructor(string memory _baseTokenURI, address wagonsAddress) ERC1155(_baseTokenURI) Ownable(msg.sender) {
+    constructor(string memory _baseTokenURI, address wagonsAddress, string memory _name, string memory _symbol) ERC1155(_baseTokenURI) Ownable(msg.sender) {
         wagons = wagonsAddress;
+        name = _name;
+        symbol = _symbol;
     }
 
     function mintResource(address player, uint8 resource, uint256 amount) external {
