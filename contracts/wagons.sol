@@ -194,7 +194,7 @@ contract Wagons is ERC721URIStorage, Ownable {
 
     function buyWagon(uint8 level) public payable {
         require(totalWagons[level] < maxWagons[level], "Max wagons amount on this level reached");
-        require(level > 0 && level < levelPrice.length, "Level doesn't exist");
+        require(level > 0 && level < levelPrice.length, "Level doesnt exist");
         require(msg.value == levelPrice[level], "Level cost another sum");
         uint256 tokenId = _nextTokenId++; // increment tokenId
         wagons[tokenId].level = level; // set level for tokenId
@@ -213,8 +213,8 @@ contract Wagons is ERC721URIStorage, Ownable {
     function goToWork(uint256 tokenId) public {
         require(ownerOf(tokenId) == msg.sender, "Only owner of wagon can send it to work");
         require(wagons[tokenId].condition != wagons[tokenId].level * 10 - 10, "Wagon is completely broken");
-        require(wagons[tokenId].cooldown < block.timestamp, "Wagon hasn't back from work yet");
-        require(wagons[tokenId].claimAmount == 0, "Wagon hasn't back from work yet");
+        require(wagons[tokenId].cooldown < block.timestamp, "Wagon hasnt back from work yet");
+        require(wagons[tokenId].claimAmount == 0, "Wagon hasnt back from work yet");
         wagons[tokenId].condition -= 1; // downgrade condition
         wagons[tokenId].cooldown = block.timestamp + workTime[wagons[tokenId].level]; // add cooldown
         wagons[tokenId].claimAmount += resourceGains[wagons[tokenId].level]; // identify resource and amount to get
@@ -225,7 +225,7 @@ contract Wagons is ERC721URIStorage, Ownable {
     function backFromWork(uint256 tokenId) public {
         require(ownerOf(tokenId) == msg.sender, "Only owner of wagon can get wagon back");
         require(wagons[tokenId].cooldown < block.timestamp, "Wagon is still going for resources");
-        require(wagons[tokenId].claimAmount > 0, "Wagon hasn't done any work");
+        require(wagons[tokenId].claimAmount > 0, "Wagon hasnt done any work");
         IResources resources = IResources(resourcesContract); // init 1155 interface
         resources.mintResource(msg.sender, resourceType[wagons[tokenId].level], wagons[tokenId].claimAmount); // mint resource
         wagons[tokenId].claimAmount = 0; // clear claimable amount
@@ -235,12 +235,12 @@ contract Wagons is ERC721URIStorage, Ownable {
     function repairWagon(uint256 tokenId, uint8 conditionLevelsUp) public {
         IResources resources = IResources(resourcesContract); // init 1155 interface
         uint32 metalAmount = repairCost[wagons[tokenId].level]; // identify metal amount for repair
-        require(resources.isApprovedForAll(msg.sender, address(this)), "Your metal isn't approved for transfer by this contract");
+        require(resources.isApprovedForAll(msg.sender, address(this)), "Your metal isnt approved for transfer by this contract");
         require(resources.balanceOf(msg.sender, 2) >= metalAmount * conditionLevelsUp, "Not enough metal for this repair");
         require(wagons[tokenId].condition + conditionLevelsUp <= wagons[tokenId].level * 10, "Too much levels for repair");
         require(wagons[tokenId].condition != wagons[tokenId].level * 10, "Wagon is completely repaired");
-        require(wagons[tokenId].cooldown < block.timestamp, "Wagon hasn't back from work yet");
-        require(wagons[tokenId].claimAmount == 0, "Wagon hasn't back from work yet");
+        require(wagons[tokenId].cooldown < block.timestamp, "Wagon hasnt back from work yet");
+        require(wagons[tokenId].claimAmount == 0, "Wagon hasnt back from work yet");
         resources.safeTransferFrom(msg.sender, deadAddress, 2, metalAmount, ""); // burn metal
         wagons[tokenId].condition += conditionLevelsUp; // repair
         string memory conditionURI = Strings.toString(wagons[tokenId].condition); // stringify tokenURI
