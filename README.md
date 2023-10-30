@@ -17,3 +17,12 @@ You can mint ERC721 wagons, which have unique resource type and repairable condi
 3.  `setRecourcesContract()` in **wagons.sol**
 
 4.  `msg.sender` have to give an approval to **wagons.sol** contract address in **resources.sol** contract to play
+
+## Economy
+
+https://docs.google.com/spreadsheets/d/17yFH1PTIFT3COcvgITsKL2SY3KTySHgm6S-wz3B5eqg/edit#gid=0
+
+## UI hints
+
+1. Add +13 sec on UI for every timestamp because of block refreshing
+2. Parse all tokenId owners and index it in the database, holding mappings address => tokenIds
