@@ -1,0 +1,11 @@
+{
+  "name": "Wood Wagon",
+  "description": "About this resource",
+  "image": "ipfs-hash",
+  "attributes": [
+    { "trait_type": "Type", "value": "Wagon" },
+    { "trait_type": "Delivering", "value": "Wood" },
+    { "trait_type": "Level", "value": "1" },
+    { "trait_type": "Condition", "value": "0%" }
+  ]
+}
