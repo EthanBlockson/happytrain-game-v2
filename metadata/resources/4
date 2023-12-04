@@ -1,6 +1,11 @@
 {
   "name": "Ruby",
-  "description": "About this resource",
-  "image": "ipfs-hash",
-  "attributes": [{ "trait_type": "Type", "value": "Resource" }]
+  "description": "Get 64 ruby from each ruby wagon dispatched and returned successfully.",
+  "image": "ipfs://bafkreibylyzzhlobtznlen3jyhho7hmrmbyj2x3pxagwilvruobyn76hs4",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Resource"
+    }
+  ]
 }

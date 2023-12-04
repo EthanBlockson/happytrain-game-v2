@@ -1,6 +1,11 @@
 {
   "name": "Gold",
-  "description": "About this resource",
-  "image": "ipfs-hash",
-  "attributes": [{ "trait_type": "Type", "value": "Resource" }]
+  "description": "Get 128 gold from each golden wagon dispatched and returned successfully.",
+  "image": "ipfs://bafkreicgnvrst6juz4vfnqwq2aot4you2nv3bkqv6un3zw3irklaizpqqe",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Resource"
+    }
+  ]
 }

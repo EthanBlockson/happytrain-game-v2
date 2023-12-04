@@ -1,6 +1,11 @@
 {
   "name": "Bricks",
-  "description": "About this resource",
-  "image": "ipfs-hash",
-  "attributes": [{ "trait_type": "Type", "value": "Resource" }]
+  "description": "Get 512 bricks from each brick wagon dispatched and returned successfully.",
+  "image": "ipfs://bafkreig2hhkhhm3is44urmh2zelgk2e6plojqdzzr7cbjc63nbi65pdtmq",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Resource"
+    }
+  ]
 }

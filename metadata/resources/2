@@ -1,6 +1,11 @@
 {
   "name": "Metal",
-  "description": "About this resource",
-  "image": "ipfs-hash",
-  "attributes": [{ "trait_type": "Type", "value": "Resource" }]
+  "description": "Get 256 metal from each metal wagon dispatched and returned successfully. Metal is currently the most precious resource as it's essential for wagon repairs.",
+  "image": "ipfs://bafkreidhwukzfbpyj5wvp5q5bh3erlxuzw5jyx4727olqyphevc7o54lq4",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Resource"
+    }
+  ]
 }

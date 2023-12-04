@@ -1,6 +1,11 @@
 {
   "name": "Wood",
-  "description": "About this resource",
-  "image": "ipfs-hash",
-  "attributes": [{ "trait_type": "Type", "value": "Resource" }]
+  "description": "Get 1024 wood from each wooden wagon dispatched and returned successfully.",
+  "image": "ipfs://bafkreigda5n7qzeimmmqhgbmkzaovygf7mmbjwyekdab73idhmqi4rgt7q",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Resource"
+    }
+  ]
 }
