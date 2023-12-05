@@ -212,7 +212,7 @@ contract Wagons is ERC721URIStorage, Ownable {
 
     function goToWork(uint256 tokenId) public {
         require(ownerOf(tokenId) == msg.sender, "Only owner of wagon can send it to work");
-        require(wagons[tokenId].condition != wagons[tokenId].level * 10 - 10, "Wagon is completely broken");
+        require(wagons[tokenId].condition != wagons[tokenId].level * 10 - 10 + 1, "Wagon is completely broken");
         require(wagons[tokenId].cooldown < block.timestamp, "Wagon hasnt back from work yet");
         require(wagons[tokenId].claimAmount == 0, "Wagon hasnt back from work yet");
         wagons[tokenId].condition -= 1; // downgrade condition
