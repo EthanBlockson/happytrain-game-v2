@@ -16,7 +16,9 @@ You can mint ERC721 wagons, which have unique resource type and repairable condi
 
 3.  `setRecourcesContract()` in **wagons.sol**
 
-4.  `msg.sender` have to give an approval to **wagons.sol** contract address in **resources.sol** contract to play
+4.  `msg.sender` have to `setApprovalForAll(true)` to **wagons.sol** contract address in **resources.sol** contract to play
+
+5.  Do not renounce owner so you can edit metadata later
 
 ## Economy
 
