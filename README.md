@@ -6,13 +6,13 @@ You can mint ERC721 wagons, which have unique resource type and repairable condi
 
 1. Deploy **wagons.sol**
 
-- `_baseTokenURI` — exact like `ipfs://hash/` (use [nft.storage](https://nft.storage/))
+- `_baseTokenURI` — exact like `ipfs://bafybeie47vvt7dl2lp3sufe32fp427alqkicnsuahft67ftpz2m2c62nym/` (use [nft.storage](https://nft.storage/))
 
 - `burner` — address, where ETH gains from wagon purchases are going to buyback clan tokens then
 
 2. Deploy **resources.sol**
 
-- `_baseTokenURI` — exact like `ipfs://hash/` (use [nft.storage](https://nft.storage/))
+- `_baseTokenURI` — exact like `ipfs://bafybeieadsg3gucb54e6xx5ddcb4qduvkjfjpdexut57j4jrxxy72r6zuu/` (use [nft.storage](https://nft.storage/))
 
 3.  `setRecourcesContract()` in **wagons.sol**
 
