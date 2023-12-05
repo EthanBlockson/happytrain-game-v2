@@ -1,0 +1,23 @@
+{
+  "name": "Wood Wagon",
+  "description": "Get 1024 wood from this wooden wagon dispatched and returned successfully. Each wagon has 10 strength levels and can be repaired using metal.",
+  "image": "ipfs://bafkreiav4kpfyitptlbw5kquwhtdfskj5tzn4smtggjvcf7iy46t7gmquq",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Wagon"
+    },
+    {
+      "trait_type": "Delivering",
+      "value": "Wood"
+    },
+    {
+      "trait_type": "Level",
+      "value": "2"
+    },
+    {
+      "trait_type": "Condition",
+      "value": "22%"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Brick Wagon",
+  "description": "Get 512 bricks from this brick wagon dispatched and returned successfully. Each wagon has 10 strength levels and can be repaired using metal.",
+  "image": "ipfs://bafkreiguxzaf7ejezjwlhsji2ylt3u4afss35jpxnq55pqnojsvmgsbqxe",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Wagon"
+    },
+    {
+      "trait_type": "Delivering",
+      "value": "Bricks"
+    },
+    {
+      "trait_type": "Level",
+      "value": "8"
+    },
+    {
+      "trait_type": "Condition",
+      "value": "44%"
+    }
+  ]
+}

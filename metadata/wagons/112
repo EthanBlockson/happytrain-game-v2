@@ -1,0 +1,23 @@
+{
+  "name": "Metal Wagon",
+  "description": "Get 256 metal from this metal wagon dispatched and returned successfully. Each wagon has 10 strength levels and can be repaired using metal.",
+  "image": "ipfs://bafkreihg5w63j7ytw3p62nkwutqdjhp6hrlsiw757u6pcvrb764wvy7uga",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Wagon"
+    },
+    {
+      "trait_type": "Delivering",
+      "value": "Metal"
+    },
+    {
+      "trait_type": "Level",
+      "value": "12"
+    },
+    {
+      "trait_type": "Condition",
+      "value": "11%"
+    }
+  ]
+}

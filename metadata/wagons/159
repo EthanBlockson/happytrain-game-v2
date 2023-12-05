@@ -1,0 +1,23 @@
+{
+  "name": "Gold Wagon",
+  "description": "Get 128 gold from this gold wagon dispatched and returned successfully. Each wagon has 10 strength levels and can be repaired using metal.",
+  "image": "ipfs://bafkreigvez4peceh36wvlntllp2iuwzovlxnoh5i76li2xt5ikctnprpdy",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Wagon"
+    },
+    {
+      "trait_type": "Delivering",
+      "value": "Gold"
+    },
+    {
+      "trait_type": "Level",
+      "value": "16"
+    },
+    {
+      "trait_type": "Condition",
+      "value": "89%"
+    }
+  ]
+}

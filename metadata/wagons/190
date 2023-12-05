@@ -1,0 +1,23 @@
+{
+  "name": "Ruby Wagon",
+  "description": "Get 64 ruby from this ruby wagon dispatched and returned successfully. Each wagon has 10 strength levels and can be repaired using metal.",
+  "image": "ipfs://bafkreiezp2yi33lm5xpz547x2mxsaq7joy2rjfdeq4qdsjhd6iaisaexyu",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Wagon"
+    },
+    {
+      "trait_type": "Delivering",
+      "value": "Ruby"
+    },
+    {
+      "trait_type": "Level",
+      "value": "19"
+    },
+    {
+      "trait_type": "Condition",
+      "value": "100%"
+    }
+  ]
+}

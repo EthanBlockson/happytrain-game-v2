@@ -15,6 +15,9 @@ ipfs://bafybeieadsg3gucb54e6xx5ddcb4qduvkjfjpdexut57j4jrxxy72r6zuu/
 ## Wagon images
 
 ipfs://bafybeict77jy4smggnmqmtsxe3x7xrk63azeadivheb4nsmlyrn444igyu/
-(https://nftstorage.link/ipfs/bafybeict77jy4smggnmqmtsxe3x7xrk63azeadivheb4nsmlyrn444igyu)
+(https://nftstorage.link/ipfs/bafybeict77jy4smggnmqmtsxe3x7xrk63azeadivheb4nsmlyrn444igyu/)
 
 ## Wagon metadata
+
+ipfs://bafybeie47vvt7dl2lp3sufe32fp427alqkicnsuahft67ftpz2m2c62nym/
+(https://nftstorage.link/ipfs/bafybeie47vvt7dl2lp3sufe32fp427alqkicnsuahft67ftpz2m2c62nym/)
